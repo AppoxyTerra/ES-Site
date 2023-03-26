@@ -13,7 +13,6 @@
     font-family: 'Ubuntu', sans-serif;
     margin: 0px 0px;
     scroll-behavior: smooth;
-    display: block;
 }
 
 h1 {
@@ -21,7 +20,7 @@ h1 {
 }
 
 body {
-    overflow:hidden;
+    /* overflow:hidden; */
     display:initial;
 }
 
@@ -31,10 +30,36 @@ body {
     height: 100vh;
 }
 
+p {
+    display: block;
+    padding-top: 30px;
+    padding-left: 200px;
+    font-size: 20px;
+    text-align: justify;
+}
+
 #intro {
     position: absolute;
     background: rgb(255,96,3);
-    background: linear-gradient(135deg, rgba(255,96,3,1) 0%, rgba(255,136,0,1) 51%, rgba(255,209,0,1) 100%);
+    background: linear-gradient(0deg, rgba(255,96,3,1) 0%, rgba(255,136,0,1) 51%, rgba(255,209,0,1) 100%);
+}
+
+.wave-transition {
+    position: absolute;
+    top: calc(100%);
+    min-width: 100vw;
+    width: 100vw;
+    max-width: 100vw;
+    left: 0px;
+    margin: 0px !important;
+    padding: 0;
+}
+
+.datacont {
+    position: absolute;
+    top: 300px;
+    left: 20%;
+    width: 60%;
 }
 
 #intro>* {
@@ -59,4 +84,49 @@ body {
 }
 #intro>h3:nth-of-type(3) {
     top: 66%;
+}
+
+
+#experience {
+    z-index: -1;
+    position: absolute;
+    top: 100vh;
+    background: rgb(90, 27, 68);
+    background: linear-gradient(0deg, rgb(149, 53, 109) 0%, #41c9f3 100%);
+}
+
+#experience>h1 {
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    transform: translate(-50%, 0px);
+}
+
+#experience img:not(.wave-transition) {
+    max-height: 300px;
+    margin: 30px;
+}
+#experience img:not(.wave-transition):nth-of-type(1) {
+    float: left;
+}
+#experience img:not(.wave-transition):nth-of-type(2) {
+    float: right;
+}
+
+
+#experience>.wave-transition {
+    translate: 0px -28%;
+}
+
+#resultats {
+    z-index: -2;
+    position: absolute;
+    top: 200vh;
+    background: none;
+}
+#resultats>h1 {
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    transform: translate(-50%, 0px);
 }

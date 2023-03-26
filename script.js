@@ -1,4 +1,8 @@
-addEventListener('contextmenu', event => event.preventDefault());
+// addEventListener('contextmenu', event => event.preventDefault());
+window.onbeforeunload = function () {
+	window.style["scroll-behavior"] = '0';
+	window.scrollTo(0, 0);
+}
 
 const intro = document.getElementById("intro");
 const experience = document.getElementById("experience");
@@ -6,13 +10,11 @@ const resultats = document.getElementById("resultats");
 
 const refs = [intro, experience, resultats];
 
-var frame_id = 1;
-
 addEventListener('click', (ev) => {
 	var vh = intro.getBoundingClientRect().height;
-	if (ev.button == 2) {
-		vh = -vh;
-	}
+	// if (ev.button == 2) {
+	// 	vh = -vh;
+	// }
 	refs.forEach((el) => {
 		const last_y = el.getBoundingClientRect().y;
 		el.animate(
@@ -33,7 +35,6 @@ addEventListener('click', (ev) => {
 			el.style.top = last_y - vh + "px";
 		}
 	});
-	frame_id++;
 })
 
 
