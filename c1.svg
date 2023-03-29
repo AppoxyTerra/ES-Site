@@ -13,7 +13,7 @@
 	</path>
 	<defs>
 		<linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
-			<stop stop-color="rgba(9.907, 26.738, 174.388, 0.25)" offset="0%"></stop>
+			<stop stop-color="rgba(149, 53, 109, 0.25)" offset="0%"></stop>
 			<stop stop-color="rgba(0, 250.681, 255, 0.57)" offset="100%"></stop>
 		</linearGradient>
 	</defs>

@@ -36,6 +36,7 @@ p {
     padding-left: 200px;
     font-size: 20px;
     text-align: justify;
+    max-width: 70%;
 }
 
 #intro {
@@ -104,6 +105,7 @@ p {
 
 #experience img:not(.wave-transition) {
     max-height: 300px;
+    min-height: 300px;
     margin: 30px;
 }
 #experience img:not(.wave-transition):nth-of-type(1) {
