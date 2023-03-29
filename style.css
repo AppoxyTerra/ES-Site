@@ -103,15 +103,15 @@ p {
     transform: translate(-50%, 0px);
 }
 
-#experience img:not(.wave-transition) {
+.datacont>img:not(.wave-transition) {
     max-height: 300px;
     min-height: 300px;
     margin: 30px;
 }
-#experience img:not(.wave-transition):nth-of-type(1) {
+.datacont>img:not(.wave-transition):nth-of-type(1) {
     float: left;
 }
-#experience img:not(.wave-transition):nth-of-type(2) {
+.datacont>img:not(.wave-transition):nth-of-type(2) {
     float: right;
 }
 
