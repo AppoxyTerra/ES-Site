@@ -3,7 +3,7 @@
 
 // addEventListener('contextmenu', event => event.preventDefault());
 window.onbeforeunload = function () {
-	window.style["scroll-behavior"] = '0';
+	// window.style["scroll-behavior"] = '0';
 	window.scrollTo(0, 0);
 }
 
