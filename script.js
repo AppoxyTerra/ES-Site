@@ -18,9 +18,7 @@ var counter = 0;
 
 addEventListener('click', (ev) => {
 	counter+=1;
-	console.log(counter)
 	if (counter >= 4) {
-		removeEventListener('click', this);
 		return;
 	}
 	var vh = intro.getBoundingClientRect().height + 50;
@@ -45,21 +43,6 @@ addEventListener('click', (ev) => {
 		}
 	});
 })
-
-function generatePDF() {
-	var doc = new jsPDF();  //create jsPDF object
-	 doc.fromHTML(document.body, // page element which you want to print as PDF
-	 0,
-	 0, 
-	 {
-	   'width': 1600  //set width
-	 },
-	 function(a) 
-	  {
-	   doc.save("HTML2PDF.pdf"); // save file name as HTML2PDF.pdf
-	 });
-   }
-generatePDF();
 
 
 function goBackToTop() {
