@@ -63,6 +63,7 @@ generatePDF();
 
 
 function goBackToTop() {
+	counter = 0;
 	var vh = intro.getBoundingClientRect().height + 50;
 	refs.forEach((el) => {
 		el.style.top = refs.indexOf(el) * vh + "px";
