@@ -18,7 +18,7 @@ var counter = 0;
 
 addEventListener('click', (ev) => {
 	counter+=1;
-	if (counter >= 4) {
+	if (counter > 0 && counter >= 4) {
 		return;
 	}
 	var vh = intro.getBoundingClientRect().height + 50;
@@ -46,7 +46,7 @@ addEventListener('click', (ev) => {
 
 
 function goBackToTop() {
-	counter = 0;
+	counter = -1;
 	var vh = intro.getBoundingClientRect().height + 50;
 	refs.forEach((el) => {
 		el.style.top = refs.indexOf(el) * vh + "px";
