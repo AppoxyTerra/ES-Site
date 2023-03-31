@@ -18,7 +18,7 @@ var counter = 0;
 
 addEventListener('click', (ev) => {
 	counter+=1;
-	if (counter > 0 && counter >= 4) {
+	if (counter <= 0 || counter >= 4) {
 		return;
 	}
 	var vh = intro.getBoundingClientRect().height + 50;
