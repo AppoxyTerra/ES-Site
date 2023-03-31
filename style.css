@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-:root {
-    --c0: rgb(..., ..., ...);
-    --c1: rgb(..., ..., ...);
-    --c2: rgb(..., ..., ...);
-    --c3: rgb(..., ..., ...);
-    --c4: rgb(..., ..., ...);
-    --c5: rgb(..., ..., ...);
-}
 
 * {
     font-family: 'Ubuntu', sans-serif;
@@ -20,7 +12,7 @@ h1 {
 }
 
 body {
-    /* overflow:hidden; */
+    overflow:hidden;
     display:initial;
 }
 
@@ -132,4 +124,48 @@ p {
     left: 50%;
     top: 200px;
     transform: translate(-50%, 0px);
+}
+
+#resultats p {
+    max-width: 50%;
+    font-size: large;
+    font-weight: 600;
+}
+
+#autres-moyennes {
+    position: absolute;
+    right: 10px;
+    top: -100px;
+    min-width: 416px;
+    min-height: 505px;
+    /* transform: translate(0px, -50px); */
+}
+
+#conclusion {
+    position: absolute;
+    top: 300vh;
+    height: 120vh;
+    color: white;
+    font-weight: 900;
+    z-index: -3;
+    background: rgb(131,58,180);
+    background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+#conclusion>h1 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 100px));
+}
+
+#conclusion>.datacont {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + 50px), -50%);
 }
