@@ -44,7 +44,6 @@ addEventListener('click', (ev) => {
 	});
 })
 
-
 function goBackToTop() {
 	counter = -1;
 	var vh = intro.getBoundingClientRect().height + 50;
