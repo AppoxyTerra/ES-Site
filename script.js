@@ -1,3 +1,6 @@
+
+
+
 // addEventListener('contextmenu', event => event.preventDefault());
 window.onbeforeunload = function () {
 	window.style["scroll-behavior"] = '0';
@@ -43,5 +46,25 @@ addEventListener('click', (ev) => {
 	});
 })
 
+function generatePDF() {
+	var doc = new jsPDF();  //create jsPDF object
+	 doc.fromHTML(document.body, // page element which you want to print as PDF
+	 0,
+	 0, 
+	 {
+	   'width': 1600  //set width
+	 },
+	 function(a) 
+	  {
+	   doc.save("HTML2PDF.pdf"); // save file name as HTML2PDF.pdf
+	 });
+   }
+generatePDF();
 
 
+function goBackToTop() {
+	var vh = intro.getBoundingClientRect().height + 50;
+	refs.forEach((el) => {
+		el.style.top = refs.indexOf(el) * vh + "px";
+	});
+}

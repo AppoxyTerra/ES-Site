@@ -31,11 +31,6 @@ p {
     max-width: 70%;
 }
 
-#intro {
-    position: absolute;
-    background: rgb(255,96,3);
-    background: linear-gradient(0deg, rgba(255,96,3,1) 0%, rgba(255,136,0,1) 51%, rgba(255,209,0,1) 100%);
-}
 
 .wave-transition {
     position: absolute;
@@ -53,6 +48,12 @@ p {
     top: 300px;
     left: 0%;
     width: 100%;
+}
+
+#intro {
+    position: absolute;
+    background: rgb(255,96,3);
+    background: linear-gradient(0deg, rgba(255,96,3,1) 0%, rgba(255,136,0,1) 51%, rgba(255,209,0,1) 100%);
 }
 
 #intro>* {
